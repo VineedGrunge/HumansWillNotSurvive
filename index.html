@@ -1,7 +1,49 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>My website on GitHub Pages. It works!</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Личный сайт Альмиры Рашитовны</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+	<div class="header">
+		<div class="logo"></div>
+		<div class="menu">
+		<ul> 
+			<li><div onclick="LoadPage('Главная');">Общие сведения о преподавателе</div>
+				<ul>
+					<li><div onclick="LoadPage('Грамоты');">Грамоты</div></li>
+					<li><div onclick="LoadPage('Благодарственные письма');">Благодарственные письма</div></li>
+					<li><div onclick="LoadPage('Участие в профессиональных конкурсах');">Участие в профессиональных конкурсах</div></li>
+				</ul>
+			</li>
+			<li><div>Научно-методическая деятельность преподавателя</div>
+				<ul>
+					<li><div onclick="LoadPage('Используемые образовательные технологии');">Используемые образовательные технологии</div></li> <!-- дополнить -->
+					<li><div onclick="LoadPage('Работа в методическом объединении');">Работа в методическом объединении</div></li>
+					<li><div onclick="LoadPage('Открытые уроки и мероприятия');">Открытые уроки и мероприятия</div></li>
+					<li><div onclick="LoadPage('Публикации');">Публикации</div></li>
+					<li><div onclick="LoadPage('Конференции, доклады');">Конференции, доклады</div></li>
+				</ul>
+			</li>
+			<li><div>Результативность педагогической деятельности</div>
+				<ul>
+					<li><div onclick="LoadPage('Сравнительный анализ деятельности за два года');">Сравнительный анализ деятельности за два года</div></li>
+				</ul>
+			</li>
+			<li><div onclick="LoadPage('Внеклассная деятельность');">Внеклассная деятельность</div>
+			</li>
+		</ul> 
+		</div>
+	</div>
+	
+	<div class="content" id="contentNode">
+	<!-- content -->
+	</div>
+	
+	<!-- <div class="footer">
+	NE CAPIRAYT S <a href="https://osu.ppy.sh">https://osu.ppy.sh</a>
+	</div> -->
+    </body>
 </html>
